@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;800&display=swap");
+@font-face {
+  font-family: "academy";
+  src: url("Academy.ttf") format("truetype");
+  font-family: "academy3d";
+  src: url("AcademyFilled3D.ttf") format("truetype");
+}
+
+body {
+  /* Medidas absolutas
+        cm, mm, in, PX, pt, pc
+
+      Medidas relativas
+        EM, ex, rem, vw, vh, %
+    */
+  font-size: 1.2em;
+  font-style: ;
+}
+h1 {
+  font: normal 800 3em "academy3d", cursive;
+}
+
+h2 {
+  font: normal 800 1.5em "Merienda", cursive;
+}

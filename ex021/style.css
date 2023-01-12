@@ -1,0 +1,7 @@
+h1 {
+  background-color: rgb(154, 187, 176);
+  width: 450px;
+  border-style: solid;
+  text-align: center;
+  box-shadow: 5px 3px 7px 1px black;
+}
