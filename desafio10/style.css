@@ -1,4 +1,4 @@
-@charset "UTF-8"
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @font-face {
   font-family: "idroid";
@@ -89,6 +89,7 @@ article > h1 {
   font-size: 2em;
   font-weight: normal;
   text-indent: 10px;
+  text-align: left;
 }
 h2 {
   font-family: var(--font-android);
@@ -130,6 +131,14 @@ footer {
   text-align: center;
   font-size: 0.8em;
   padding: 5px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  background-color: var(--cor2);
+  color: var(--cor4);
 }
 img {
   width: 100%;
