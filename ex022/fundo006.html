@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alinhamento vertical de caixa</title>
+    <style>
+      #conteiner {
+        border: 1px solid black;
+        width: 800px;
+        height: 400px;
+        background-color: rgb(113, 173, 153);
+        background-image: url(Imagens/target001.png);
+        background-size: 100% 100%;
+        background-position: center center;
+        position: relative;
+      }
+      #content {
+        border: 1px solid black;
+        width: 300px;
+        height: 250px;
+        background-color: rgb(130, 121, 255);
+        margin: auto;
+        background-image: url(Imagens/target001.png);
+        background-size: 100% 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <section id="conteiner">
+      <article id="content"></article>
+    </section>
+  </body>
+</html>
