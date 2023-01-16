@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela1</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+      }
+      h1 {
+        font-size: 1.5em;
+      }
+      table {
+        border-collapse: collapse;
+        width: 600px;
+        position: relative;
+      }
+      caption {
+        font-size: larger;
+        font-weight: bold;
+        padding: 10px;
+        color: rgb(52, 85, 85);
+        background-color: lightgrey;
+      }
+      thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: rgb(52, 85, 85);
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      tbody > tr:nth-child(even) {
+        background-color: lightgray;
+      }
+      .pos {
+        width: 50px;
+        text-align: center;
+      }
+      .number {
+        text-align: right;
+      }
+      thead,
+      tfoot {
+        background-color: rgb(52, 85, 85);
+        color: white;
+      }
+
+      tr > td {
+        text-align: center;
+      }
+      .state {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Trabalhando com tabelas grandes</h1>
+    <!--
+
+       TABLE = Tabela
+          THEAD
+            TR, TD, TH
+          TBODY
+            TR, TD, TH
+          TFOOTER
+            TR, TD, TH -->
+    <table>
+      <caption>
+        População dos Estados do Nordeste
+      </caption>
+      <thead>
+        <tr>
+          <th class="pos" scope="col">Posição</th>
+          <th scope="col">Estado</th>
+          <th scope="col">População</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1º</td>
+          <td class="state">Bahia</td>
+          <td class="number">14.812.617</td>
+        </tr>
+        <tr>
+          <td>2º</td>
+          <td class="state">Pernambuco</td>
+          <td class="number">9.496.294</td>
+        </tr>
+        <tr>
+          <td>3º</td>
+          <td class="state">Ceará</td>
+          <td class="number">9.075.649</td>
+        </tr>
+        <tr>
+          <td>4º</td>
+          <td class="state">Maranhão</td>
+          <td class="number">7.035.055</td>
+        </tr>
+        <tr>
+          <td>5º</td>
+          <td class="state">Paraíba</td>
+          <td class="number">3.996.496</td>
+        </tr>
+        <tr>
+          <td>6º</td>
+          <td class="state">Rio Grande do Norte</td>
+          <td class="number">3.479.010</td>
+        </tr>
+        <tr>
+          <td>7º</td>
+          <td class="state">Alagoas</td>
+          <td class="number">3.322.820</td>
+        </tr>
+        <tr>
+          <td>8º</td>
+          <td class="state">Piauí</td>
+          <td class="number">3.264.531</td>
+        </tr>
+        <tr>
+          <td>9º</td>
+          <td class="state">Sergipe</td>
+          <td class="number">2.278.308</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2" scope="row">População Total</th>
+
+          <td class="number"><strong>56.760.780</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
