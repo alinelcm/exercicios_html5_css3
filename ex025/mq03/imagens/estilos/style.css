@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*Estilo Mobile First*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+
+  height: 100vh;
+}
+body {
+  background: black url(/ex025/mq03/imagens/back-phone.jpg) no-repeat center
+    center;
+  background-size: cover;
+}
+h1 {
+  color: rgba(255, 255, 255, 0.808);
+  text-shadow: 1px 1px 1px rgba(5, 5, 5, 0.459);
+  text-align: center;
+}
+img {
+  display: block;
+  margin: auto;
+}
+main {
+  width: 80vw;
+  background-color: rgba(255, 255, 255, 0.596);
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#pc,
+#tv,
+#tablet,
+#print {
+  display: none;
+}

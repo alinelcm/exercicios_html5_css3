@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* Todas as outras midias*/
+
+/* Typical Device Breakpoints
+
+Celular: 320px até 480px
+Tablet: 481px ate 768x
+Notebook: 769px até 1024px
+Desktop: 1025px até 1200px
+TV, telas grandes: acima de 1200px */
+
+@media print {
+  h1 {
+    text-shadow: none;
+    color: black;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  main {
+    margin-top: 100px;
+    border: 1px solid black;
+  }
+  #print {
+    display: block;
+  }
+  #phone {
+    display: none;
+  }
+}
+
+/*TABLET*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-image: url(../back-tablet.jpg);
+  }
+  #tablet {
+    display: block;
+  }
+  #phone {
+    display: none;
+  }
+}
+
+/*NOTEBOOK E DESKTOP*/
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  body {
+    background-image: url(../back-pc.jpg);
+  }
+  #pc {
+    display: block;
+  }
+  #phone {
+    display: none;
+  }
+}
+
+/*GRANDES TELAS*/
+@media screen and (min-width: 1201px) {
+  body {
+    background-image: url(../back-tv.jpg);
+  }
+  #tv {
+    display: block;
+  }
+  #phone {
+    display: none;
+  }
+}
