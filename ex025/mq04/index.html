@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
   </head>
-  <body>
+  <body onresize="mudouTamanho()">
     <header>
       <div>
         <h1>LER EM 2023</h1>
@@ -26,10 +26,6 @@
       </span>
       <menu id="options">
         <ul>
-          <li>
-            <a href="index.html"
-              ><img src="imagens/home.png" alt="homeicon"
-            /></a>
           </li>
           <li><a href="option1.html">Opção 1</a></li>
           <li><a href="option2.html">Opção 2</a></li>
@@ -123,6 +119,14 @@
       </p>
     </footer>
     <script>
+      function mudouTamanho(){
+        if (window.innerWidht >= 481){
+           options.style.display = 'block'
+        } else {
+          option.style.display = 'none'
+        }
+      }
+
       function clickMenu() {
         if (options.style.display == "block") {
           options.style.display = "none";

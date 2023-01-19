@@ -8,4 +8,23 @@ Notebook: 769px até 1024px
 Desktop: 1025px até 1200px
 TV, telas grandes: acima de 1200px */
 
-@media screen and (min-widht: 481px);
+@media screen and (min-width: 481px) {
+  span#burguer {
+    display: none;
+  }
+
+  menu#options {
+    display: block;
+  }
+  li {
+    display: inline-block;
+  }
+  menu a {
+    border: none;
+    border-radius: 2px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.39);
+  }
+  article {
+    max-width: 768px;
+  }
+}
